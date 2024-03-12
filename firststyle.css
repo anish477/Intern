@@ -1,0 +1,599 @@
+* {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+}
+button,
+input {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: transparent;
+
+  color: black;
+}
+.first {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.image img {
+  width: 730px;
+  height: 630px;
+}
+.text {
+  margin-top: 100px;
+  margin-left: 95px;
+  width: 30%;
+}
+.second-text {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.second-text p {
+  font-size: large;
+}
+
+.second-item img {
+  width: 256px;
+  height: 141px;
+}
+.second-item {
+  text-align: center;
+  padding: 20px 20px 20px 0px;
+}
+
+.second-container {
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.third-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.third-item img {
+  max-width: 565px;
+  max-height: 651px;
+}
+
+.third-item {
+  width: 30%;
+  margin-left: -50px;
+}
+
+.fourth-container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.fourth-text {
+  padding: 50px;
+  text-align: center;
+}
+.fourth-item {
+  width: 70%;
+  margin: auto;
+}
+.fourth-item img {
+  width: 330px;
+  height: 272px;
+}
+.fourth-button {
+  width: 100%;
+  text-align: center;
+}
+
+.fourthFrame {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 5rem;
+}
+.fourthFrame__info {
+  width: 30vw;
+}
+.fourthFrame__heading {
+  margin: 1rem;
+  margin-bottom: 5rem;
+}
+.fourthFrame__heading h5 {
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+.fourthFrame__description {
+  margin: 1rem;
+  border: solid 0.1px black;
+  border-radius: 15px;
+}
+.fourthFrame__description h2,
+.fourthFrame__description p {
+  padding: 1rem;
+}
+.fourthFrame__title {
+  margin: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: var(--main-bg-color);
+}
+.fourthFrame__image {
+  width: 30vw;
+  height: 80vh;
+}
+/* fifthFrame */
+.fifthFrame {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  align-items: center;
+}
+.fifthFrame__carouselContainer {
+  height: 43vh;
+  width: 80vw;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative; /* Add this line */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+hr {
+  size: 2px;
+}
+.carousel-item {
+  width: 70vw;
+  height: 40vh;
+  padding: 5px;
+  display: block;
+  margin: 0 2rem;
+  text-align: center;
+  border-radius: 5px;
+
+  transform-origin: center;
+  transition: 0.5s ease-in-out;
+  font-size: 16px;
+}
+.carousel-item p {
+  margin-top: 0rem;
+}
+.carousel-item h3 {
+  margin-top: 0.9rem;
+}
+
+.fifthFrame__button {
+  width: 50%;
+  left: 25%;
+  position: absolute;
+  top: 75%;
+  /* z-index: 3; */
+}
+.fifthFrame__button button {
+  width: 10vw;
+  height: 10vh;
+  border-radius: 80%;
+  margin: 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: x-large;
+}
+
+/* sixthFrame */
+.sixthFrame {
+  padding-bottom: 5rem;
+}
+.sixthFrame__vids {
+  display: flex;
+  justify-content: space-evenly;
+}
+video {
+  border: solid #434b4a;
+  border-width: 5px;
+  width: 34vw;
+}
+.sixthFrame__images {
+  margin: auto;
+  margin-top: 3rem;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  justify-content: space-evenly;
+}
+.sixthFrame__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.sixthFrame__card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sixthFrame__card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sixthFrame__card:hover img {
+  transform: scale(1.1);
+}
+
+.sixthFrame__card:hover .overlay {
+  opacity: 1;
+}
+
+.sixthFrame__card .text {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+}
+.sixthFrame__heading {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.sixthFrame__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sixthFrame__single {
+  width: 25vw;
+  height: 60vh;
+  position: relative;
+}
+
+.sixthFrame__single img {
+  width: 100%;
+  height: 80%;
+}
+
+.sixthFrame__info {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+.sixthFrame__info p {
+  margin-top: 1rem;
+}
+.sixthFrame__info h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  width: auto;
+  background-color: var(--main-bg-color);
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 2rem;
+}
+footer > :first-child,
+footer > :last-child {
+  grid-column: span 2;
+}
+.footer__linked a {
+  width: 100%;
+  display: block;
+}
+
+/* responsive */
+/* Extra Small Screens (phones) */
+@media only screen and (max-width: 426px) {
+  * {
+    font-size: large;
+  }
+  .home {
+    display: block;
+    height: auto;
+  }
+  .home__text {
+    margin-top: 0;
+    text-align: center;
+    padding: 1rem;
+    width: auto;
+  }
+  .home__image {
+    width: 100%;
+    margin-top: 1rem;
+    height: 50vh;
+  }
+
+  .secondFrame {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .secondFrame__product {
+    display: block;
+  }
+  .secondFrame__card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .secondFrame__card img {
+    width: 80vw;
+    height: 40vh;
+  }
+  .secondFrame__single {
+    display: block;
+  }
+  .secondFrame__single img {
+    width: 80vw;
+    margin: 1rem;
+    margin-top: 0.5rem;
+  }
+  .secondFrame__info {
+    width: 90vw;
+    margin: 1rem;
+    text-align: center;
+  }
+  .secondFrame__button {
+    width: 70vw;
+  }
+
+  .thirdFrame {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .thirdFrame__displays {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+  }
+  .thirdFrame__card {
+    width: 90vw;
+    margin: 1rem;
+  }
+  .thirdFrame__card img {
+    width: 100%;
+    height: 37vh;
+  }
+  .thirdFrame__info {
+    width: 87vw;
+    padding: 0.5rem;
+    margin: 0;
+  }
+  .thirdFrame__button {
+    width: 70vw;
+    height: 7vh;
+  }
+
+  .fourthFrame {
+    display: block;
+    padding-top: 2rem;
+  }
+  .fourthFrame__info {
+    text-align: center;
+    width: 100vw;
+  }
+  .fourthFrame__heading {
+    margin-bottom: 2rem;
+  }
+  .fourthFrame__image {
+    width: 100%;
+  }
+
+  .sixthFrame__container {
+    display: block;
+  }
+  .sixthFrame__vids {
+    display: block;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+  }
+  video {
+    width: 100%;
+  }
+  .sixthFrame__single {
+    width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+  }
+  .sixthFrame__heading {
+    margin-bottom: 1rem;
+  }
+  .sixthFrame__info {
+    position: absolute;
+    bottom: -14px;
+  }
+  footer {
+    padding: 3rem;
+  }
+  .footer__input input,
+  .footer__input button {
+    width: 30vw;
+    padding: 3rem;
+  }
+}
+
+/* Small Screens (tablets) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .home {
+    height: auto;
+  }
+  .home__text {
+    margin-top: 5rem;
+    width: 30vh;
+  }
+  .home__image {
+    height: 50vh;
+    width: 60vw;
+    margin-top: 3rem;
+  }
+
+  .secondFrame {
+    padding-top: 3rem;
+  }
+  .secondFrame__single img {
+    width: 50vw;
+  }
+  .secondFrame__info {
+    margin-top: 3rem;
+  }
+  .secondFrame__link {
+    font-size: small;
+  }
+  .secondFrame__button {
+    width: 14vw;
+    height: 6vh;
+  }
+
+  .thirdFrame {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: medium;
+  }
+  .thirdFrame__displays {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .thirdFrame__card img {
+    width: 30vw;
+  }
+  .thirdFrame__info {
+    width: 32vw;
+  }
+  .thirdFrame__button {
+    width: 10vw;
+  }
+
+  .fourthFrame {
+    padding-top: 3rem;
+  }
+  .fourthFrame__info {
+    width: 40vw;
+  }
+  .fourthFrame__heading {
+    margin-bottom: 0.7rem;
+    font-size: small;
+  }
+  .fourthFrame__image {
+    width: 50vw;
+  }
+}
+
+/* Medium Screens (small laptops and desktops) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .home {
+    height: auto;
+  }
+  .home__text {
+    margin-top: 5rem;
+    width: 30vh;
+  }
+  .home__image {
+    height: 50vh;
+    width: 60vw;
+    margin-top: 3rem;
+  }
+
+  .secondFrame {
+    padding-top: 3rem;
+  }
+  .secondFrame__single img {
+    width: 50vw;
+  }
+  .secondFrame__info {
+    margin-top: 3rem;
+  }
+  .secondFrame__link {
+    font-size: small;
+  }
+  .secondFrame__button {
+    width: 14vw;
+    height: 6vh;
+  }
+
+  .thirdFrame {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: medium;
+  }
+  .thirdFrame__displays {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .thirdFrame__card img {
+    width: 30vw;
+  }
+  .thirdFrame__info {
+    width: 32vw;
+  }
+  .thirdFrame__button {
+    width: 10vw;
+  }
+
+  .fourthFrame {
+    padding-top: 3rem;
+  }
+  .fourthFrame__info {
+    width: 40vw;
+  }
+  .fourthFrame__heading {
+    margin-bottom: 0.7rem;
+    font-size: small;
+  }
+  .fourthFrame__image {
+    width: 50vw;
+  }
+}
+
+/* Large Screens (large laptops and desktops) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+/* Extra Large Screens (extra-large desktops and TVs) */
+@media only screen and (min-width: 1201px) {
+  .secondFrame__card {
+    transition-duration: 0.5s;
+    transition-delay: 0.3s;
+  }
+  .secondFrame__card:hover {
+    scale: 1.05;
+    padding: 1rem;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.43);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
